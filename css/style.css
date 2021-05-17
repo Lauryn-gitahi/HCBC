@@ -1,12 +1,17 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap'); */
+
+
 body{
     margin: 0;
     padding: 0;
     font-family: monospace;
+    /* background-color: rgb(192, 191, 189); */
 }
 
 .navbar{
     background-color:#ffffff;
-    padding: 10px 10px;
+    padding: 20px 60px;
 }
 
 .navbar-nav li:hover> ul.dropdown-menu{
@@ -27,73 +32,177 @@ body{
     text-decoration: underline;
     transform: rotate(-90deg);
 }
-.navbar-brand{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.navbar-dark, .navbar-nav{
-    font-weight: 700;
-    font-size: 16px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    /* text-transform: uppercase; */
-}
-
-.nav-link{
-    font-weight: 700;
-    font-size: 16px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
 .navbar-dark .navbar-nav .nav-item{
-    margin: 0 15px;
-}
+    margin: 0 10px;
+} 
 
-.btn{
+ .btn{
     width: 70px;
-    /* height: 50px; */
-    /* border: none;
-    background-color: none; */
     border-radius: 20px;
+    background: rgb(156, 153, 198);
+    color: #ffffff;
 }
 
-.dropdown-item{
-    font-size: 14px;
-    /* text-transform: lowercase; */
+/* .carousel-item {
+    height: 100vh;
+} */
+
+.hero{
+    background-image:url('https://images.unsplash.com/photo-1437603568260-1950d3ca6eab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80');
+    background-repeat: no-repeat;
+    background-position: bottom 0;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    /* margin-bottom: 20px; */
+    z-index: -2;
+    margin-bottom: 40px;
 }
 
-.dropdown-item:hover{
-    background-color: rgb(139, 114, 114);
+.hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.hero h2{
+    font-size: 25px;
+    letter-spacing: 0.2em;
+    line-height: 2em;
+}
+.hero .right{
+    border-right: 4px solid white;
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-weight: 600; 
+}
+
+.hero p{
+    margin-top: 0;
+}
+
+.cont{
+    width: 100%;
+}
+.content span{
+   font-family: 'Dancing Script', cursive;
+    font-style: italic;
+    color: purple;
+    font-size:20px ;
+}
+
+.content{
+    display: flex;
+    height: 400px;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgba(192, 191, 189,0.3);   */
+}
+
+.cont-abt .h2{
+    padding: auto;
+    position: relative;
+}
+.cont-abt .h2::after{
+    content:'';
+    height:2px;
+    width:20%;
+    background:#f24432;
+    position:absolute;
+    left:0;
+    bottom:-5px;
+}
+
+/* .mt{
+    margin-bottom: 60px;
+} */
+
+.about{
+    /* font-family: 'Open Sans Condensed', sans-serif; */
+    font-size: 20px;
+    font-weight: 600; 
+    margin: 20px 0;
+    /* border: 1px solid black;  */
+}
+
+.cont-abt .btn{
+    border: none;
+    background: none;
+    color: rgb(156, 154, 194);
+    font-weight: 700;
+    font-size: 20px;
+    outline: none;
+    width: 30%;
+    margin-left: 0;
+}
+
+.fa-arrow-right{
+    padding: 0px 10px;
+}
+
+.mission{
+margin-top: 100px;
+
+}
+
+.mission .heading{
+    position: relative;
+   
+}
+
+.mission .heading::after{
+    content:'';
+    height:2px;
+    width:10%;
+    background:#f24432;
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    margin-bottom: 10px;
+}
+
+ .mission .row{
+    grid-gap: 2em;
+ 
+} 
+
+.mission h2{
+    padding: 10px;
+}
+.mission .col-md{
+    background: rgb(156, 153, 198);
+    border-radius: 2px;
+    text-align: center;
+    font-size: 16px;
+    padding: 20px 20px; 
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+}
+
+.mission .col-md:hover{
+    transform: scale(1.2);
+   
+}
+
+.page-footer{
+    background: rgb(54, 54, 54);
+    margin-top: 20px;
     color: white;
 }
 
-.nav-link:hover{
-    color: brown; 
-}
-
-/* .hero{
-    width: 100vw;
-    height: 300px;
-    background-color: blue;
-} */
-
-/* .carousel::BEFORE{
-    content: "HOPECITY BIBLE CHURCH";
-} */
-
-/* .hero{
-    height:500px;
-    border: 1px solid black;
-} */
-.carousel-item {
-    height: 580px;
-}
-
-/* .d-block{
-    display: co
-} */
-
-.db{
-    background-image: url(images/aaron-burden-UIib0bAvWfs-unsplash.jpg);
+ .ft-logo{
+   border-radius: 10px;
+   /* box-shadow: 10px 6px rgba(128,128,128,0.5); */
 }
