@@ -6,6 +6,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: rgb(192, 191, 189);
+    /* background: rgb(53, 58, 64); */
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -91,8 +92,20 @@ body{
     font-weight: 500; 
 }
 
-.hero p{
+/* .hero p{
     margin-top: 0;
+} */
+
+.hero .txt-type{
+    font-size: 24px;
+    color:rgb(125, 123, 190);
+    font-weight: bold;
+    
+}
+
+.txt-type > .txt{
+    border-right: 0.2rem solid #777;
+    padding-right: 0.2rem;
 }
 
 .mission{
@@ -204,10 +217,8 @@ padding: 20px 10px;
 }
 
 .cont-abt a{
-    color: rgb(125, 123, 190);
-     font-size: 40px;
+    color: #f24432;
     font-size: 20px;
-    font-weight: bold;
     text-decoration: none;
 }
 
